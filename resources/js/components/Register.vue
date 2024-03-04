@@ -184,15 +184,6 @@ export default {
           const formatRegex = /^(\d{0,6})(\d{3})(\d{2})(\d{2})$/;
           this.phoneNumber = cleanedVal.replace(formatRegex, '$1 $2-$3-$4');
           this.phoneNumberInput = pn.number.e164;
-          // this.phoneNumberDisplay = pn.number?.national;
-          // this.phoneNumber = pn.number?.e164;
-          // display_text.value = pn.number?.national
-          // value.value = pn.number?.e164
-          // errors = []
-          // emit('update:modelValue', value.value)
-          // emit('valide', value.value)
-        } else {
-          // errors = [...errors, props.invalidMessage]
         }
       }
     },
